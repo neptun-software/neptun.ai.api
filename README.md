@@ -11,7 +11,7 @@ Setup:
 docker build -t rwkv-converter -f Dockerfile.build .
 
 # download and convert a model (one-off) - it's going to be fast on CPU too!
-docker run -ti --name converter -v $PWD:/data rwkv-converter https://huggingface.co/neptun-org/neptun.ai/resolve/main/RWKV-5-World-0.4B-v2-20231113-ctx4096.pth-LoRA-neptun.ai-neptun.scraper-lora-20epochs.pth /data/models/rwkv
+docker run -ti --name converter -v $PWD:/data rwkv-converter https://huggingface.co/neptun-org/neptun.ai/resolve/main/RWKV-5-World-0.4B-v2-20231113-ctx4096.pth-LoRA-neptun.ai-neptun.scraper-lora-20epochs.pth /data/models/rwkv.bin
 
 # Get the tokenizer
 wget https://raw.githubusercontent.com/saharNooby/rwkv.cpp/5eb8f09c146ea8124633ab041d9ea0b1f1db4459/rwkv/20B_tokenizer.json -O models/rwkv.tokenizer.json
