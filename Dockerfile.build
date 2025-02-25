@@ -8,5 +8,5 @@ RUN pip3 install torch numpy
 WORKDIR /build
 COPY ./scripts/ .
 
-RUN git clone --recurse-submodules https://github.com/saharNooby/rwkv.cpp && cd rwkv.cpp && cmake . && cmake --build . --config Release
+RUN git clone --recurse-submodules https://github.com/RWKV/rwkv.cpp && cd rwkv.cpp && cmake . && cmake --build . --config Release
 ENTRYPOINT [ "/build/build.sh" ]
