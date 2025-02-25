@@ -7,14 +7,6 @@ Example of how to run rwkv models.
 Setup:
 
 ```bash
-# Clone LocalAI
-git clone https://github.com/mudler/LocalAI
-
-cd LocalAI/examples/rwkv
-
-# (optional) Checkout a specific LocalAI tag
-# git checkout -b build <TAG>
-
 # build the tooling image to convert an rwkv model locally:
 docker build -t rwkv-converter -f Dockerfile.build .
 
