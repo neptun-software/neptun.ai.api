@@ -1,6 +1,6 @@
 services:
   api:
-    image: localai/localai:latest-cpu
+    image: localai/localai:latest-aio-cpu
     ports:
       - 8080:8080
     environment:
